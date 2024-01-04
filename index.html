@@ -8,8 +8,9 @@
     <link rel="icon" href="assets/images/Logo-Goth.svg" />
 
     <script src="assets/js/modal.js" defer></script>
-    <script src="assets/js/login-modal.js" defer></script>
+    <script type="module" src="assets/js/login-modal.js" defer></script>
     <script src="assets/js/cookie.js" defer></script>
+    <script type="module" src="assets/js/booking-table.js" defer></script>
     <script src="assets/js/validation.js" defer></script>
     <script src="assets/js/gallery.js" defer></script>
 
@@ -22,15 +23,15 @@
 
   <body>
     <!-- START OF MODAL -->
-    <div id="modal_container" class="modal">
+    <div id="book_modal_container" class="modal">
       <div>
         <!-- CLOSING  BUTTON -->
-        <span id="login_modal_close" title="CLOSE THIS IMAGE">&times;</span>
+        <span id="book_modal_close" title="CLOSE THIS IMAGE">&times;</span>
 
         <div id="modalContent">
           <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
-          <form class="myform">
-            <fieldset>
+          <form class="myBookingform">
+            <fieldset class="bookingFieldset">
               <legend>Simpel formValidering</legend>
               <label for="fname">Fornavn</label>
               <input
@@ -87,7 +88,7 @@
                 placeholder="Password"
               />
 
-              <input type="submit" value="Book table" />
+              <input id="bookingBtn" type="submit" value="Book table" />
             </fieldset>
           </form>
         </div>
@@ -194,7 +195,7 @@
           </li>
 
           <li>
-            <a href="#" onclick="displayModal('modal_container')">Book Table</a>
+            <a id="book-btn" href="#">Book Table</a>
           </li>
         </ul>
       </nav>

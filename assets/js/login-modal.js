@@ -12,7 +12,7 @@ const password = document.getElementById("Spassword");
 
 const submitBtn = document.querySelector(".submit");
 
-const validateInput = (input, regEx) => {
+export const validateInput = (input, regEx) => {
   const trimmedValue = input.value.trim();
   const isValid = regEx.test(trimmedValue);
 
@@ -28,7 +28,7 @@ const validateInput = (input, regEx) => {
   return isValid;
 };
 
-const formValidation = (e) => {
+export const formValidation = (e) => {
   const nameRegEx = /^[a-zA-Z]{2,17}$/;
   const passwordRegEx = /^[a-zA-Z]{2,17}$/;
 
@@ -52,7 +52,7 @@ loginBtn.addEventListener("click", () => {
   loginModal.classList.add("show-modal");
 });
 
-closeBtn.addEventListener("click", () => {
-  loginModal.classList.remove("show-modal");
-  console.log("click click");
-});
+// closeBtn.addEventListener("click", () => {
+//   loginModal.classList.remove("show-modal");
+//   console.log("click click");
+// });

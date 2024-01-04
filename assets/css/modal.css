@@ -25,6 +25,11 @@ body.no-scroll {
   overflow: hidden;
 }
 
+/* Booking table modal */
+.modal.show-table {
+  display: block;
+}
+
 .modal > div {
   /*FIRST DIVERSION IN ".modal"*/
   position: relative;
