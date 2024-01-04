@@ -16,6 +16,12 @@
   display: block;
 }
 
+.modal.show-modal form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 /* Cookie modal */
 .modal.show-cookie {
   display: block;
@@ -28,6 +34,21 @@ body.no-scroll {
 /* Booking table modal */
 .modal.show-table {
   display: block;
+}
+
+.modal.show-table form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Form inputs styling */
+.valid {
+  outline: 1.5px solid green;
+}
+
+.invalid {
+  outline: 1.5px solid red;
 }
 
 .modal > div {
