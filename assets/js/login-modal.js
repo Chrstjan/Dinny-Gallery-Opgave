@@ -12,7 +12,7 @@ const password = document.getElementById("Spassword");
 
 const submitBtn = document.querySelector(".submit");
 
-export const validateInput = (input, regEx) => {
+const validateInput = (input, regEx) => {
   const trimmedValue = input.value.trim();
   const isValid = regEx.test(trimmedValue);
 

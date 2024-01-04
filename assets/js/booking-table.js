@@ -1,5 +1,3 @@
-import { validateInput } from "./login-modal";
-
 const bookingContainer = document.getElementById("book_modal_container");
 
 const bookBtn = document.getElementById("book-btn");
@@ -30,6 +28,22 @@ const password = document.getElementById("password");
 
 const submitBtn = document.getElementById("bookingBtn");
 
+const validateFormInput = (input, regEx) => {
+  const trimmedValue = input.value.trim();
+  const isValid = regEx.test(trimmedValue);
+
+  if (isValid) {
+    input.classList.add("valid");
+    input.classList.remove("invalid");
+  } else {
+    input.classList.add("invalid");
+    input.classList.remove("valid");
+    //Display error message
+  }
+
+  return isValid;
+};
+
 const validateDate = (dateLocal) => {
   const isDateValid = dateLocal.value !== "";
 
@@ -49,12 +63,12 @@ const validateBookingForm = (e) => {
   const emailRegEx = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
   const passwordRegEx = /^[a-zA-Z]{2,17}$/;
 
-  const isFNameValid = validateInput(fName, nameRegEx);
-  const isLNameValid = validateInput(lName, nameRegEx);
+  const isFNameValid = validateFormInput(fName, nameRegEx);
+  const isLNameValid = validateFormInput(lName, nameRegEx);
   const isDateValid = validateDate(date);
   const isTimeValid = validateDate(time);
-  const isEmailValid = validateInput(email, emailRegEx);
-  const isPasswordValid = validateInput(password, passwordRegEx);
+  const isEmailValid = validateFormInput(email, emailRegEx);
+  const isPasswordValid = validateFormInput(password, passwordRegEx);
 
   if (
     isFNameValid &&
