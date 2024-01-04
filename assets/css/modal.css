@@ -11,8 +11,18 @@
   background-color: #000000c6; /* TRANSPARENT FALLBACK FILL */
 }
 
+/* Login modal */
 .modal.show-modal {
   display: block;
+}
+
+/* Cookie modal */
+.modal.show-cookie {
+  display: block;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .modal > div {
