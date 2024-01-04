@@ -8,6 +8,23 @@
   width: 100%;
   cursor: pointer;
 }
+
+/* Gallery Arrows */
+.section-gallery #forwards,
+.section-gallery #backwards {
+  width: 5vw;
+  z-index: 999;
+  filter: brightness(100);
+}
+
+.section-gallery .arrows-container {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
 .section-gallery figure {
   position: relative;
   overflow: hidden;
