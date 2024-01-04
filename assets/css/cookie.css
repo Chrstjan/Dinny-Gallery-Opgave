@@ -1,0 +1,29 @@
+#Cookie_container {
+  color: aliceblue;
+}
+
+.Cookie_button_ok {
+  border-radius: 0.4rem;
+  font-size: 2rem;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  color: #eee;
+  background-color: #b22;
+  font-weight: bold;
+  transition: 400ms;
+}
+
+.Cookie_button_no {
+  border-radius: 0.4rem;
+  font-size: 2rem;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  color: #eee;
+  background-color: rgb(82, 192, 27);
+  font-weight: bold;
+  transition: 400ms;
+}

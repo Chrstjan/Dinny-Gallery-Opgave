@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINNY</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/Logo-Goth.svg">
+
+    <script src="assets/js/modal.js" defer></script>
+    <script src="assets/js/validation.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+
+    <style>
+        h1 span {
+            color: var(--black);
+        }
+    </style>
+</head>
+
+<body id="myBody">
+    <!-- START OF MODAL -->
+    <div id="modal_container" class="modal">
+        <div>
+            <!-- CLOSING  BUTTON -->
+            <span id="modal_close" onclick="closeModal('modal_container')" title="CLOSE THIS IMAGE">&times;</span>
+
+
+            <div id="modalContent">
+                <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
+                <form class="myform">
+                    <fieldset>
+                        <legend>Simpel formValidering</legend>
+                        <label for="fname">Fornavn</label>
+                        <input type="text" id="fname" name="fname" required placeholder="Type Your First Name" />
+
+                        <label for="lname">Efternavn:</label>
+                        <input type="text" id="lname" name="lname" required placeholder="Type Your Last Name" />
+
+                        <label for="ldate">Dato:</label>
+                        <input type="date" id="ldate" name="ldate" required placeholder="date" />
+
+                        <label for="ltime">Tidpunkt:</label>
+                        <input type="time" id="ltime" name="ltime" required placeholder="date" />
+
+
+                        <label for="adresse">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Type Your Email" />
+
+                        <label for="password">Password:</label><area shape="" coords="" href="" alt="">
+                        <input type="password" id="password" name="password" required placeholder="Password" />
+
+
+                        <input type="submit" value="Book table" />
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- END OF MODAL -->
+
+
+    <!-- START OF MODAL -->
+    <div id="signIn_container" class="modal">
+        <div>
+            <!-- CLOSING  BUTTON -->
+            <span id="modal_close" onclick="closeModal('signIn_container')" title="CLOSE THIS IMAGE">&times;</span>
+
+
+            <div id="modalContent">
+                <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
+                <form novalidate class="myform">
+                    <fieldset>
+
+                        <label for="Sname">Navn:</label>
+                        <input type="text" id="Sname" name="Sname" required placeholder="Type Your Last Name" />
+
+
+                        <label for="Spassword">Password:</label><area shape="" coords="" href="" alt="">
+                        <input type="password" id="Spassword" name="Spassword" required placeholder="Password" />
+
+                        <input type="submit" value="Sign in" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- END OF MODAL -->
+
+    <!-- START OF MODAL -->
+    <div id="Cookie_container" class="modal">
+        <div>
+            <!-- CLOSING  BUTTON -->
+
+            <h2>Cookie politik</h2>
+            <p>Hej gastronomiske sjæl! Vi bruger cookies for at forbedre din online-eksistens og sikre, at vores
+                digitale
+                tilstedeværelse er som mørkest muligt. Disse små, virtuelle sjælebidder hjælper os med at skræddersy
+                indholdet til dine
+                dystre præferencer og analysere web-trafik som en skyggefuld dans.
+            </p>
+
+            <section>
+
+                <input type="checkbox" id="req" name="req" checked />
+                <label for="scales">Nødvendige</label><br>
+
+                <input type="checkbox" id="stat" name="stat" checked />
+                <label for="stat">Statestik</label><br>
+
+                <input type="checkbox" id="func" name="func" checked />
+                <label for="func">Funktionelle</label><br>
+            </section>
+
+
+
+
+            <span class="Cookie_button_ok" onclick="closeModal('Cookie_container')">All</span>
+            <span class="Cookie_button_no" onclick="closeModal('Cookie_container')">Selected</span>
+
+
+
+        </div>
+    </div>
+
+    <!-- END OF MODAL -->
+
+
+
+
+    <div class="container-main">
+        <!-- #region HEADER & NAVIGATION -->
+        <!-- GLOBAL HEADER -->
+        <header class="header-main">
+            <img src="Assets/images/Header-Image-Dinny.jpg" alt="Header-Background-Image">
+            <hgroup>
+                <h1>Di<span>nn</span>y</h1>
+            </hgroup>
+        </header>
+        <!-- GLOBAL NAVIGATION -->
+        <nav class="nav-main">
+            <ul>
+                <li><a href="#">About Dinny</a></li>
+                <li><a href="#">The Staff</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" onclick="displayModal('signIn_container')">SignIn</a></li>
+
+                <li><a href="#" onclick="displayModal('modal_container')">Book Table</a></li>
+
+            </ul>
+        </nav>
+        <!-- #endregion -->
+        <!-- GLOBAL CONTENT -->
+        <main>
+            <!-- ABOUT DINNY -->
+            <section class="section-about">
+                <header>
+                    <h2>About Dinny</h2>
+                </header>
+                <figure>
+                    <img src="Assets/images/GFX/Staff-01.jpg" alt="About Dinny">
+                    <figcaption>
+                        <article>
+                            <h3>More About Dinny</h3>
+                            <p>Unwonted casket grotesquerie misfortune gossamer interminable weeping funereal
+                                diminished
+                                nightfall incarnate lethargy suffer. Delicate wan faculty misfortune candor
+                                recondite
+                                sullen dread I know not why lethargy respectable dignity.</p>
+                            <p>Subterraneous immortal, languid isolation. Languid pronounced, stately sublime my
+                                fateful
+                                cartilaginous candor phantasm doomed acutely, grotto untainted eidolon grotesquerie.
+                                Dreary, relic fear veiled Mare Tenebrarum overwrought, pallid as is my wont burnt.
+                            </p>
+                            <p>Wicked fate utterance solitude lassitudinous, door averse allurement perturbation wan
+                                departed asunder. Iron of her wretched morbid Faustian dismay virginal bedewed flesh
+                                interminable chapter.</p>
+                            <footer>
+
+                            </footer>
+                        </article>
+                    </figcaption>
+                </figure>
+            </section>
+            <!-- SECTION STAFF -->
+            <section class="section-staff">
+                <header>
+                    <h2>The Staff</h2>
+                </header>
+                <div>
+                    <!-- STAFF ONE -->
+                    <figure>
+                        <img src="Assets/images/GFX/Staff-02.jpg" alt="">
+                        <figcaption>
+                            <article>
+                                <h3>Room</h3>
+                                <p>Such a dirge paleness carmilla remembrance. Enmeshed; virginal acutely faint
+                                    dignity
+                                    ruminations despondently perish overwrought? Somnambulist alone mausoleum
+                                    outpouring
+                                    desirous laconic doomed accusing.</p>
+                                <p>Shroud fragile grace remembrance unearthly doorstep ethereal memory unholy
+                                    turmoil.
+                                    Malign towering candor broken bier ashes wearied sanguine opprobrious sanctuary
+                                    guilt-ridden. Abject candor distraught of my ossification virginal?</p>
+                                <p>Embodied dopplegänger haunting, fragile black repentant lamentable morass turmoil
+                                    shorn wretched chapter midnight ancestral dreadful allurement? I fear that
+                                    lamentable evil singularly, lustreless overcome descending Faustian deathless.
+                                    Soured distress effusion, yellowed.</p>
+                                <footer>
+
+                                </footer>
+                            </article>
+                        </figcaption>
+                    </figure>
+
+                    <!-- STAFF Two -->
+                    <figure>
+                        <img src="Assets/images/GFX/Staff-04.jpg" alt="">
+                        <figcaption>
+                            <article>
+                                <h3>Kitchen</h3>
+                                <p>Unwonted casket grotesquerie misfortune gossamer interminable weeping funereal
+                                    diminished nightfall incarnate lethargy suffer. Delicate wan faculty misfortune
+                                    candor recondite sullen dread I know not why lethargy respectable dignity.</p>
+                                <p>Subterraneous immortal, languid isolation. Languid pronounced, stately sublime my
+                                    fateful cartilaginous candor phantasm doomed acutely, grotto untainted eidolon
+                                    grotesquerie. Dreary, relic fear veiled Mare Tenebrarum overwrought, pallid as
+                                    is my
+                                    wont burnt.</p>
+                                <p>Wicked fate utterance solitude lassitudinous, door averse allurement perturbation
+                                    wan
+                                    departed asunder. Iron of her wretched morbid Faustian dismay virginal bedewed
+                                    flesh
+                                    interminable chapter.</p>
+                                <footer>
+
+                                </footer>
+                            </article>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- SECTION DELIVERY -->
+            <section class="section-delivery">
+                <header>
+                    <h2>Delivery</h2>
+                </header>
+                <figure>
+                    <img src="Assets/images/GFX/Delivery.jpg" alt="Delivery Image">
+                    <article>
+                        <h3>Don't move an inch!</h3>
+                        <p>Eldritch deathly providence door shuttered dignified writhe evinced velvet fog. Piety ill
+                            health crimson obsession overcome unholy, churchyard. Dignified worsted heavy-hearted
+                            torment ivy-clad voluminous loss, punctilious.</p>
+                        <p>Cloister hesitation sable stricken fear undertaker singularly irksome. Midnight
+                            antechamber
+                            utterance countenance somnambulist rendered chapel repentance envy longing misdeeds
+                            restless
+                            shroud swoon?</p>
+                        <p>Unwonted casket grotesquerie misfortune gossamer interminable weeping funereal diminished
+                            nightfall incarnate lethargy suffer. Delicate wan faculty misfortune candor recondite
+                            sullen
+                            dread I know not why lethargy respectable dignity.</p>
+                        <p>Wicked fate utterance solitude lassitudinous, door averse allurement perturbation wan
+                            departed asunder. Iron of her wretched morbid Faustian dismay virginal bedewed flesh
+                            interminable chapter.</p>
+                        <footer>
+                            <a href="#" onclick="return false;">Order:</a>
+
+                        </footer>
+                    </article>
+                </figure>
+            </section>
+            <!-- SECTION GALLERY -->
+
+
+            <section class="section-gallery">
+                <header>
+                    <h2>Dinny Gallery</h2>
+                </header>
+
+                <img id="nav_arrow_back" src="Assets/images/back.png" alt="Gallery back">
+
+
+
+                <figure>
+
+                    <img id="gallery_image" src="Assets/images/GFX/Dinny-01.jpg" alt="Gallery One">
+
+                </figure>
+
+                <img id="nav_arrow_forward" src="Assets/images/back.png" alt="Gallery back">
+
+            </section>
+
+
+        </main>
+
+
+
+        <!-- GLOBAL FOOTER -->
+        <footer class="footer-main">
+            <!-- FOOTER RIGHTIE -->
+            <div>
+                <h4>Pin down Dinny</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2170.077788438774!2d9.914861976964206!3d57.05020747359189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4649328b76fc17bd%3A0x298ff8a4f1630dd!2sCaf%C3%A9%201000Fryd!5e0!3m2!1sda!2sdk!4v1701254142583!5m2!1sda!2sdk"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- FOOTER LEFTIE -->
+            <div>
+                <ul>
+                    <li>
+                        <h4>Address Header</h4>
+                    </li>
+                    <li>Roadname, number</li>
+                    <li>ZipCode City Name</li>
+                    <li><a href="tel:+4522334455" tel="+45 2233 4455">+45 2233 4455</a></li>
+                    <li><a href="mailto:Mail@dinny.com">Mail@dinny.com</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h5>Information:</h5>
+                    </li>
+                    <li>1234 5678 1011</li>
+                    <li>CVR: 9876542123</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
