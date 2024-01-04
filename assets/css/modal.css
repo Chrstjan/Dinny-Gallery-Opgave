@@ -10,6 +10,11 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: #000000c6; /* TRANSPARENT FALLBACK FILL */
 }
+
+.modal.show-modal {
+  display: block;
+}
+
 .modal > div {
   /*FIRST DIVERSION IN ".modal"*/
   position: relative;

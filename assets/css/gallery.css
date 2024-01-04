@@ -64,6 +64,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Gallery Arrows */
   .section-gallery .arrows-container {
     gap: 16rem;
   }

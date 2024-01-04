@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/images/Logo-Goth.svg" />
 
     <script src="assets/js/modal.js" defer></script>
+    <script src="assets/js/login-modal.js" defer></script>
     <script src="assets/js/validation.js" defer></script>
     <script src="assets/js/gallery.js" defer></script>
 
@@ -23,12 +24,7 @@
     <div id="modal_container" class="modal">
       <div>
         <!-- CLOSING  BUTTON -->
-        <span
-          id="modal_close"
-          onclick="closeModal('modal_container')"
-          title="CLOSE THIS IMAGE"
-          >&times;</span
-        >
+        <span id="login_modal_close" title="CLOSE THIS IMAGE">&times;</span>
 
         <div id="modalContent">
           <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
@@ -103,17 +99,12 @@
     <div id="signIn_container" class="modal">
       <div>
         <!-- CLOSING  BUTTON -->
-        <span
-          id="modal_close"
-          onclick="closeModal('signIn_container')"
-          title="CLOSE THIS IMAGE"
-          >&times;</span
-        >
+        <span id="modal_close" title="CLOSE THIS IMAGE">&times;</span>
 
         <div id="modalContent">
           <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
-          <form novalidate class="myform">
-            <fieldset>
+          <form class="myloginform">
+            <fieldset class="form-fieldset">
               <label for="Sname">Navn:</label>
               <input
                 type="text"
@@ -133,7 +124,7 @@
                 placeholder="Password"
               />
 
-              <input type="submit" value="Sign in" />
+              <input class="submit" type="submit" value="Sign in" />
             </fieldset>
           </form>
         </div>
@@ -200,7 +191,7 @@
         </ul>
         <ul>
           <li>
-            <a href="#" onclick="displayModal('signIn_container')">SignIn</a>
+            <a id="login-btn" href="#">SignIn</a>
           </li>
 
           <li>
